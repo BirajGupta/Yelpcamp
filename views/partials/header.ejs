@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CAMPGROUNDS</title>
+	<link rel="stylesheet" type="text/css" href="/styling.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+</head>
+<body>
+
+	<div class="ui inverted segment">
+		<div class="ui inverted secondary pointing menu">
+		<%if(!current){%>
+		  <a class="item" href="/campgrounds">View campgrounds</a>
+		  <a href="/login" class="item">
+			Login
+		  </a>
+		  <a href="/register" class="item">
+			Register
+		  </a>
+		
+		<%}else{%>
+		  <a class="item" href="/campgrounds">View campgrounds</a>
+		  <a href="/logout" class="item">
+			Logout
+		  </a>
+		<%}%>
+		</div>
+	  </div>

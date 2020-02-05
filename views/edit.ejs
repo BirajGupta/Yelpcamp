@@ -1,0 +1,17 @@
+<%-include("partials/header")%>
+
+
+<h1>Edit campground</h1>
+<div class="container">
+<form class="text-center" action="/campgrounds/<%=campground._id%>?_method=PUT" method="POST">
+		<input type="text" name="campground[name]" placeholder=<%=campground.name%>>
+		<hr>
+		<input type="text" name="campground[image]" placeholder=<%=campground.image%>>
+		<hr>
+		<input type="text" name="campground[description]" placeholder=<%=campground.description%>>
+		<hr>
+		<button class="ui green button">SUBMIT</button>
+</form>
+</div>
+
+<%-include("partials/footer")%>
